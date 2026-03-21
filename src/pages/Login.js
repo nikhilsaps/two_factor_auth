@@ -40,9 +40,7 @@ export default function Login() {
           </h3>
 
           {/* ERROR ALERT */}
-          {error && (
-            <div className="alert alert-danger py-2">{error}</div>
-          )}
+          {error && <div className="alert alert-danger py-2">{error}</div>}
 
           {/* Email */}
           <div className="form-floating mb-3">
@@ -83,9 +81,7 @@ export default function Login() {
             Login
           </button>
 
-          <div className="text-center my-3 text-muted">
-            ── or ──
-          </div>
+          <div className="text-center my-3 text-muted">── or ──</div>
 
           <p className="text-center mb-0">
             Don’t have an account?{" "}
@@ -95,6 +91,17 @@ export default function Login() {
               onClick={() => navigate("/signup")}
             >
               Sign up
+            </span>
+          </p>
+
+          <p className="text-center mb-0">
+            Did you forgot your password {" "}
+            <span
+              className="text-primary fw-semibold"
+              style={{ cursor: "pointer" }}
+              onClick={() => navigate("/forgetpassword")}
+            >
+              Forget Password
             </span>
           </p>
         </div>
