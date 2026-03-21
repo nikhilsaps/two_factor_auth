@@ -95,7 +95,7 @@ export default function Login() {
           </p>
 
           <p className="text-center mb-0">
-            Did you forgot your password {" "}
+            Did you forgot your password ? {" "}
             <span
               className="text-primary fw-semibold"
               style={{ cursor: "pointer" }}
