@@ -6,6 +6,10 @@ import Dashboard from "./pages/Dashboard";
 import './App.css'
 import ForgetPassword from "./pages/ForgetPassword";
 import HomePage from "./pages/HomePage";
+import VerifyEmail from "./pages/VerifyEmail";
+import VerifySecurity from "./pages/VerifySecurity";
+
+
 
 export default function App() {
   return (
@@ -13,6 +17,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/signin" element={<Login />} />
+        <Route path="/verify-security" element={<VerifySecurity />} />
+        <Route path="/verify-email" element={<VerifyEmail />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/verify" element={<Verify2FA />} />
         <Route path="/dashboard" element={<Dashboard />} />

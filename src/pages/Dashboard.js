@@ -1,8 +1,15 @@
 import { useNavigate, useLocation } from "react-router-dom";
-
+import {  loginUser,
+  signupUser,
+  triggerMFA,
+  verifySMSOtp,
+  verifyEmailOtp,
+  initRecaptcha
+} from "../firebase/firebaseAPI";
 export default function Dashboard() {
   const navigate = useNavigate();
   const location = useLocation();
+const { method, contact } = location.state || {};
 
   // 👉 Data passed after login (simulate for now)
   const {

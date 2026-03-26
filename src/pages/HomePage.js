@@ -1,6 +1,12 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import {  loginUser,
+  signupUser,
+  triggerMFA,
+  verifySMSOtp,
+  verifyEmailOtp,
+  initRecaptcha
+} from "../firebase/firebaseAPI";
 export default function HomePage() {
   const navigate = useNavigate()
 

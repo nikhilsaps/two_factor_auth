@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import {  loginUser,
+  signupUser,
+  triggerMFA,
+  verifySMSOtp,
+  verifyEmailOtp,
+  initRecaptcha
+} from "../firebase/firebaseAPI";
+
 export default function ForgetPassword() {
   const navigate = useNavigate();
 
